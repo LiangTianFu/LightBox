@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>LightBox图片画廊</title>
+		<link rel="stylesheet"type="text/css"href="css/main.css">
+		<script type="text/javascript"src="js/jquery.js"></script>
+		<script type="text/javascript"src="js/lightbox.js"></script>
+	</head>
+	<body>
+		<h2>图片画廊</h2>
+<!-- 		class="js-lightbox"  表示这个元素要启用lightbox<br>
+data-role="lightbox"   表示这个元素要启用lightbox<br>
+data-source="images/1-1.jpg"  原图的地址<br>
+ data-group="group-1"   标识当前是否属于一个组别<br>
+ data-id="101"     图片的位移标识<br>
+ data-caption="101" 当前图片的描述文字 -->
+		<H1>第一组图片：全职猎人</H1>
+		<div>
+			<img class="js-lightbox" data-role="lightbox" data-source="images/1-1.jpg" src="images/1-1.jpg" data-group="group-1" data-id="101" data-caption="杰·富力士" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/1-2.jpg" src="images/1-2.jpg" data-group="group-1" data-id="102" data-caption="奇犽·揍敌客" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/1-3.jpg" src="images/1-3.jpg" data-group="group-1" data-id="103" data-caption="雷欧力" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/1-4.jpg" src="images/1-4.jpg" data-group="group-1" data-id="104" data-caption="酷拉皮卡" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/1-5.jpg" src="images/1-5.jpg" data-group="group-1" data-id="105" data-caption="杰·富力士-奇犽·揍敌客" width="100" height="100">
+		</div>
+			<H1>第二组图片：跑车</H1>
+		<div>
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-1.jpg" src="images/2-1.jpg" data-group="group-2" data-id="201" data-caption="帕加尼风之子" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-2.jpg" src="images/2-2.jpg" data-group="group-2" data-id="202" data-caption="布加迪威龙" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-3.jpg" src="images/2-3.jpg" data-group="group-2" data-id="203" data-caption="迈凯轮P1" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-4.jpg" src="images/2-4.jpg" data-group="group-2" data-id="204" data-caption="保时捷918 Spyder" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-5.jpg" src="images/2-5.jpg" data-group="group-2" data-id="205" data-caption="兰博基尼雷文顿" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-6.jpg" src="images/2-6.jpg" data-group="group-2" data-id="206" data-caption="法拉利LaFerrari" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-7.jpg" src="images/2-7.jpg" data-group="group-2" data-id="207" data-caption="阿斯顿马丁One·77" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/2-8.jpg" src="images/2-8.jpg" data-group="group-2" data-id="208" data-caption="Lykan Hypersport" width="100" height="100">
+		</div>
+			<H1>第三组图片</H1>
+		<div>
+			<img class="js-lightbox" data-role="lightbox" data-source="images/3-1.jpg" src="images/3-1.jpg" data-group="group-3" data-id="301" data-caption="301" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/3-2.jpg" src="images/3-2.jpg" data-group="group-3" data-id="302" data-caption="301" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/3-3.jpg" src="images/3-3.jpg" data-group="group-3" data-id="303" data-caption="301" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/3-4.jpg" src="images/3-4.jpg" data-group="group-3" data-id="304" data-caption="301" width="100" height="100">
+			<img class="js-lightbox" data-role="lightbox" data-source="images/3-5.jpg" src="images/3-5.jpg" data-group="group-3" data-id="305" data-caption="301" width="100" height="100">
+			
+		</div>
+			<H1>第四组图片</H1>
+		<div>
+			<img class="js-lightbox" data-role="lightbox" data-source="images/4-1.jpg" src="images/4-1.jpg" data-group="group-4" data-id="401" data-caption="401" width="100" height="100">
+		</div>
+		<!-- 	遮罩层
+		<div id="mask"></div>
+		弹出层
+		<div id="popup">
+			图片视图
+			<div class="pic-view">
+				<span class="btn prev-btn prev-btn-show"></span>
+				<img class="image"src="images/2-2.jpg"alt=""width="100%">
+				<span class="btn next-btn next-btn-show"></span>
+			</div>
+			图片信息
+			<div class="pic-info">
+				<div class="pic-info-area">
+					<p class="pic-desc">图片标题</p>
+					<span class="pic-index">当前索引：2of4</span>
+				</div>
+				<span class="close-btn"></span>
+			</div>
+		</div> -->
+		<script>
+		$(function(){
+			var lightbox=new LightBox({
+				speed:"fast",
+				maxWidth:900,
+				maxHeight:600,
+				maskOpacity:0.4
+			});
+		});
+	</script>
+	</body>
+</html>

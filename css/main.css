@@ -1,0 +1,27 @@
+/*样式重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h5,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+/* body{font:12px/1.5 'microsoft yahei',tahoma,arial,'Hiragino Sans GB',宋体,sans-serif;} */
+body{font-size: 12px;font-family: "微软雅黑","宋体";}
+h2{text-align: center;font-size: 32px;}
+.clearfix:after{visibility: hidden;display: block;font-size: 0;content: '';clear: both;height: 0;}
+.clearfix{zoom:1;}
+.text-ellipsis{white-space: nowrap;/*设置不换行*/text-overflow: ellipsis;overflow: hidden;}
+/*lightbox图片画廊样式*/
+#mask{position:fixed;left: 0;top: 0;width:100%;height: 100%;background-color: #000;opacity: 0.5;z-index: 999;display: none;background: url(../images/icon/opacity.png) left top repeat;}
+#popup{width: 400px;position: fixed;left: 50%;top:50px;margin-left: -200px;z-index: 1000;display: none;}
+#popup .pic-view{position:relative;border:5px solid #fff;border-radius: 3px;background:url(../images/icon/loading.gif) center center no-repeat #fff;overflow:hidden;}
+#popup .pic-view .btn{position:absolute;top:0;width:40%;height:100%;z-index:1;cursor: pointer;background: url(../images/icon/transparent.png) left top repeat;}
+#popup .pic-view .prev-btn{left:0;}
+#popup .pic-view .next-btn{right:0;}
+#popup .pic-view .prev-btn-show{background: url(../images/icon/prev.png) left center no-repeat;}
+#popup .pic-view .next-btn-show{background: url(../images/icon/next.png) right center no-repeat;}
+#popup .pic-view .image{display: block;}
+#popup .pic-info{position:relative;background-color:rgba(0,0,0,0.5);margin:0 5px;margin-top: -60px;border-radius: 3px;z-index: 2;background: url(../images/icon/opacity.png) left top repeat;}
+#popup .pic-info .pic-info-area{color: #fff;padding:10px 5px; }
+#popup .pic-info .pic-info-area .pic-desc{}
+#popup .pic-info .pic-info-area  .pic-index{color: #999;}
+#popup .pic-info .close-btn{position: absolute;right:10px;top:13px;width: 27px;height: 27px;background:url(../images/icon/close.png) center center no-repeat;}
